@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_SingleSectionTableView_SingleSectionTableViewUITests : NSObject
+@end
+@implementation PodsDummy_Pods_SingleSectionTableView_SingleSectionTableViewUITests
+@end
