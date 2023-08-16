@@ -24,6 +24,7 @@
 		2283BEFB2A56ECA1004C1034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2283BEFD2A56ECA1004C1034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22842B0E2A6563390052E20D /* KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPath.swift; sourceTree = "<group>"; };
+		22FF6C0E2A8BD375006EA634 /* OpaqueExample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OpaqueExample.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +60,7 @@
 				2283BEEF2A56EC9F004C1034 /* AppDelegate.swift */,
 				2283BEF32A56ECA0004C1034 /* WeakDelegates.swift */,
 				22842B0E2A6563390052E20D /* KeyPath.swift */,
+				22FF6C0E2A8BD375006EA634 /* OpaqueExample.playground */,
 				2283BEF52A56ECA0004C1034 /* Main.storyboard */,
 				2283BEF82A56ECA1004C1034 /* Assets.xcassets */,
 				2283BEFA2A56ECA1004C1034 /* LaunchScreen.storyboard */,

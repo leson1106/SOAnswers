@@ -34,7 +34,7 @@ class User {
     }
     
     lazy var weakGreeting: () -> String = { [weak self] in
-        return "Hi, \(self?.name)"
+        return "Hi, \(String(describing: self?.name))"
     }
 }
 
