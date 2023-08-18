@@ -43,8 +43,6 @@ class ViewController: UIViewController {
                 //completionHandler...
                 print("Completed")
             }
-            
-            group.leave()
         }
     }
 }
