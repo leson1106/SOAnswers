@@ -12,6 +12,7 @@
 		2283BEF02A56EC9F004C1034 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2283BEEF2A56EC9F004C1034 /* AppDelegate.swift */; };
 		2283BEF92A56ECA1004C1034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2283BEF82A56ECA1004C1034 /* Assets.xcassets */; };
 		2283BEFC2A56ECA1004C1034 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2283BEFA2A56ECA1004C1034 /* LaunchScreen.storyboard */; };
+		22D2C2902AF0EA180085E2AE /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D2C28F2AF0EA180085E2AE /* NewsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		2283BEF82A56ECA1004C1034 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2283BEFB2A56ECA1004C1034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2283BEFD2A56ECA1004C1034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22D2C28F2AF0EA180085E2AE /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				2283BEEF2A56EC9F004C1034 /* AppDelegate.swift */,
 				227FFCD22A8FBA6000B800F7 /* ViewController.swift */,
+				22D2C28F2AF0EA180085E2AE /* NewsView.swift */,
 				227FFCD42A8FBA7300B800F7 /* Main.storyboard */,
 				2283BEF82A56ECA1004C1034 /* Assets.xcassets */,
 				2283BEFA2A56ECA1004C1034 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D2C2902AF0EA180085E2AE /* NewsView.swift in Sources */,
 				2283BEF02A56EC9F004C1034 /* AppDelegate.swift in Sources */,
 				227FFCD32A8FBA6000B800F7 /* ViewController.swift in Sources */,
 			);
