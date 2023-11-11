@@ -7,6 +7,12 @@
 
 import UIKit
 
+enum TaskType: String {
+    case `async`
+    case `sync`
+    case mix
+}
+
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -15,21 +21,39 @@ class ViewController: UIViewController {
         let viewModel = ViewModel()
         print(Thread.current)
         
-//        let syncTask = Task { //sync 1 by 1, threads in action seems like queue.async
-//            print(Thread.current)
-//            try await viewModel.addStaff()
-//            try await viewModel.addStaff()
-//            try await viewModel.addStaff()
-//        }
+        let syncTask = Task { //sync 1 by 1, threads in action seems like queue.async
+            print("Thread input sync \(Thread.current)")
+            try await viewModel.addStaff(type: .sync)
+            try await viewModel.addStaff(type: .sync)
+            try await viewModel.addStaff(type: .sync)
+            
+            print("DONE SYNC BLOCK")
+        }
         
         let asynTask = Task { //async
-            print(Thread.current)
-            async let a = viewModel.addStaff()
-            async let b = viewModel.addStaff()
-            async let c = viewModel.addStaff()
-
+            print("Thread input async \(Thread.current)")
+            async let a = viewModel.addStaff(type: .async)
+            async let b = viewModel.addStaff(type: .async)
+            async let c = viewModel.addStaff(type: .async)
+            
             //Without `await` none of these async let will be executed, it will be suspended at "Adding staff"
-            let actions = try await a
+            let tasks = try await [a,b,c]
+            for each in tasks {
+                print("Iterating async tasks")
+            }
+            print("DONE ASYNC BLOCK")
+        }
+        
+        let mixTask = Task { //mix
+            print("Thread input mix \(Thread.current)")
+            try await viewModel.addStaff(type: .mix)
+            async let b = viewModel.addStaff(type: .mix)
+            async let c = viewModel.addStaff(type: .mix)
+            
+            //Without `await` none of these async let will be executed, it will be suspended at "Adding staff"
+            let actions = try await b
+            
+            print("DONE MIXED BLOCK")
         }
         
         print("Hello world!")
@@ -45,43 +69,27 @@ class ViewModel {
     var coreStaffs: [Staff] = []
     var normalStaffs: [Staff] = []
     
-    func addStaff() async throws {
+    func addStaff(type: TaskType) async throws {
         let id = Int.random(in: 0...10_000)
-        print("Adding staff \(Date()) \(id)")
+        print("Adding staff \(type.rawValue) \(Date()) \(id)")
         try await Task.sleep(nanoseconds: 2 * 1_000_000_000)
         
-        let isCoreStaff = await checkIfIsCoreStaff(id)
+        let isCoreStaff = await checkIfIsCoreStaff(id, type: type)
         if isCoreStaff {
             coreStaffs.append(Staff(id: id, name: "Staff \(id)"))
         } else {
             normalStaffs.append(Staff(id: id, name: "Staff \(id)"))
         }
-        print("Adding staff done \(Date()) \(id)")
-        print(Thread.current)
+        print("Adding staff done \(type.rawValue) \(Date()) \(id)")
+        print("Adding Thread \(type.rawValue): \(Thread.current)")
         print("====================")
     }
     
-    private func checkIfIsCoreStaff(_ id: Int) async -> Bool {
-        print("Checking staff \(Date()) \(id)")
+    private func checkIfIsCoreStaff(_ id: Int, type: TaskType) async -> Bool {
+        print("Checking staff \(type.rawValue) \(Date()) \(id)")
         try? await Task.sleep(nanoseconds: 2 * 1_000_000_000)
-        print("Checking done \(Date()) \(id)")
-        print(Thread.current)
+        print("Checking done \(type.rawValue) \(Date()) \(id)")
+        print("Checking Thread \(type.rawValue): \(Thread.current)")
         return Bool.random()
     }
 }
-
-//let viewModel = ViewModel()
-//let syncTask = Task { //sync 1 by 1
-//    try await viewModel.addStaff()
-//    try await viewModel.addStaff()
-//    try await viewModel.addStaff()
-//}
-//
-//let asynTask = Task { //async
-//    async let a = viewModel.addStaff()
-//    async let b = viewModel.addStaff()
-//    async let c = viewModel.addStaff()
-//
-//    //Without `await` none of these async let will be executed, it will be suspended at "Adding staff"
-//    let actions = try await a
-//}
