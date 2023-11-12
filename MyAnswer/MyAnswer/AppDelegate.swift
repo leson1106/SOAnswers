@@ -5,7 +5,9 @@
 //  Created by Son Le on 06/07/2023.
 //
 
+
 import UIKit
+import SwiftUI
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let vc = ViewController()
+        let vc = UIHostingController(rootView: GridMockItem(items: MockData.createElements()))
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
         
