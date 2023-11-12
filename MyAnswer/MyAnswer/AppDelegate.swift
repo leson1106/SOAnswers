@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let vc = ViewController()
+        let vc = PaymentViewController(nibName: "PaymentViewController", bundle: .main)
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
         

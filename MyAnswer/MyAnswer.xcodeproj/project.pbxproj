@@ -12,6 +12,10 @@
 		2283BEF02A56EC9F004C1034 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2283BEEF2A56EC9F004C1034 /* AppDelegate.swift */; };
 		2283BEF92A56ECA1004C1034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2283BEF82A56ECA1004C1034 /* Assets.xcassets */; };
 		2283BEFC2A56ECA1004C1034 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2283BEFA2A56ECA1004C1034 /* LaunchScreen.storyboard */; };
+		22BAEECE2B006E8A00C13686 /* PaymentAmountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22BAEECA2B006E8A00C13686 /* PaymentAmountCell.xib */; };
+		22BAEECF2B006E8A00C13686 /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22BAEECB2B006E8A00C13686 /* PaymentViewController.xib */; };
+		22BAEED02B006E8A00C13686 /* PaymentAmountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BAEECC2B006E8A00C13686 /* PaymentAmountCell.swift */; };
+		22BAEED12B006E8A00C13686 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BAEECD2B006E8A00C13686 /* PaymentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		2283BEF82A56ECA1004C1034 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2283BEFB2A56ECA1004C1034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2283BEFD2A56ECA1004C1034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22BAEECA2B006E8A00C13686 /* PaymentAmountCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentAmountCell.xib; sourceTree = "<group>"; };
+		22BAEECB2B006E8A00C13686 /* PaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
+		22BAEECC2B006E8A00C13686 /* PaymentAmountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentAmountCell.swift; sourceTree = "<group>"; };
+		22BAEECD2B006E8A00C13686 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 		2283BEEE2A56EC9F004C1034 /* MyAnswer */ = {
 			isa = PBXGroup;
 			children = (
+				22BAEECC2B006E8A00C13686 /* PaymentAmountCell.swift */,
+				22BAEECA2B006E8A00C13686 /* PaymentAmountCell.xib */,
+				22BAEECD2B006E8A00C13686 /* PaymentViewController.swift */,
+				22BAEECB2B006E8A00C13686 /* PaymentViewController.xib */,
 				2283BEEF2A56EC9F004C1034 /* AppDelegate.swift */,
 				227FFCD22A8FBA6000B800F7 /* ViewController.swift */,
 				227FFCD42A8FBA7300B800F7 /* Main.storyboard */,
@@ -122,8 +134,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22BAEECE2B006E8A00C13686 /* PaymentAmountCell.xib in Resources */,
 				227FFCD52A8FBA7300B800F7 /* Main.storyboard in Resources */,
 				2283BEFC2A56ECA1004C1034 /* LaunchScreen.storyboard in Resources */,
+				22BAEECF2B006E8A00C13686 /* PaymentViewController.xib in Resources */,
 				2283BEF92A56ECA1004C1034 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22BAEED02B006E8A00C13686 /* PaymentAmountCell.swift in Sources */,
 				2283BEF02A56EC9F004C1034 /* AppDelegate.swift in Sources */,
 				227FFCD32A8FBA6000B800F7 /* ViewController.swift in Sources */,
+				22BAEED12B006E8A00C13686 /* PaymentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
