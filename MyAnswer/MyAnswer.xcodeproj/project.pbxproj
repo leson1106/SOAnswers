@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2212B6C32B09F94F006D50F1 /* LaunchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2212B6C22B09F94F006D50F1 /* LaunchPage.swift */; };
 		227FFCD32A8FBA6000B800F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227FFCD22A8FBA6000B800F7 /* ViewController.swift */; };
 		227FFCD52A8FBA7300B800F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227FFCD42A8FBA7300B800F7 /* Main.storyboard */; };
 		2283BEF02A56EC9F004C1034 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2283BEEF2A56EC9F004C1034 /* AppDelegate.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2212B6C22B09F94F006D50F1 /* LaunchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPage.swift; sourceTree = "<group>"; };
 		227FFCD22A8FBA6000B800F7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		227FFCD42A8FBA7300B800F7 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2283BEEC2A56EC9F004C1034 /* MyAnswer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAnswer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +58,7 @@
 			children = (
 				2283BEEF2A56EC9F004C1034 /* AppDelegate.swift */,
 				227FFCD22A8FBA6000B800F7 /* ViewController.swift */,
+				2212B6C22B09F94F006D50F1 /* LaunchPage.swift */,
 				227FFCD42A8FBA7300B800F7 /* Main.storyboard */,
 				2283BEF82A56ECA1004C1034 /* Assets.xcassets */,
 				2283BEFA2A56ECA1004C1034 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2283BEF02A56EC9F004C1034 /* AppDelegate.swift in Sources */,
+				2212B6C32B09F94F006D50F1 /* LaunchPage.swift in Sources */,
 				227FFCD32A8FBA6000B800F7 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
