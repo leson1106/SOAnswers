@@ -58,6 +58,22 @@ class ViewController: UIViewController {
         
         print("Hello world!")
     }
+    
+    func fetchAndAwait() async throws -> String {
+        try await Task.sleep(nanoseconds: 2 * 1_000_000_000)
+        return "Hello"
+    }
+    
+    func multipleListener() {
+        let taskHere = Task {
+            try await fetchAndAwait()
+        }
+        
+        Task {
+            let value1 = await taskHere.result
+            let value2 = await taskHere.result
+        }
+    }
 }
 
 struct Staff {
