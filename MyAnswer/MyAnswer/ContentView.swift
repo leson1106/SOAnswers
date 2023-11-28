@@ -7,9 +7,20 @@
 
 import SwiftUI
 
+//https://stackoverflow.com/questions/77556596/how-to-stop-text-from-wiping-background-color-with-navigationstack
 struct ContentView: View {
+    @State private var text = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            ZStack {
+                BackgroundFillView()
+                VStack {
+                    TextField("Input here", text: $text)
+                    Text("HELLO")
+                }
+            }
+            .navigationBarTitle("TITLE")
+        }
     }
 }
 
