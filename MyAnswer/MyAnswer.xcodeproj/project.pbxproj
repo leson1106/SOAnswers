@@ -12,7 +12,41 @@
 		2283BEF02A56EC9F004C1034 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2283BEEF2A56EC9F004C1034 /* AppDelegate.swift */; };
 		2283BEF92A56ECA1004C1034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2283BEF82A56ECA1004C1034 /* Assets.xcassets */; };
 		2283BEFC2A56ECA1004C1034 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2283BEFA2A56ECA1004C1034 /* LaunchScreen.storyboard */; };
+		22A25AF42B3C089500A2D30C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A25AF32B3C089500A2D30C /* WidgetKit.framework */; };
+		22A25AF62B3C089500A2D30C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A25AF52B3C089500A2D30C /* SwiftUI.framework */; };
+		22A25AF92B3C089500A2D30C /* WidgetMockBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A25AF82B3C089500A2D30C /* WidgetMockBundle.swift */; };
+		22A25AFD2B3C089500A2D30C /* WidgetMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A25AFC2B3C089500A2D30C /* WidgetMock.swift */; };
+		22A25AFF2B3C089600A2D30C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A25AFE2B3C089600A2D30C /* Assets.xcassets */; };
+		22A25B032B3C089600A2D30C /* WidgetMockExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 22A25AF12B3C089500A2D30C /* WidgetMockExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		22A25B092B3C090500A2D30C /* TimerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A25B082B3C090500A2D30C /* TimerAttributes.swift */; };
+		22A25B0A2B3C090500A2D30C /* TimerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A25B082B3C090500A2D30C /* TimerAttributes.swift */; };
+		22A25B0C2B3C09D100A2D30C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A25B0B2B3C09D100A2D30C /* ContentView.swift */; };
+		22A25B0D2B3C09D100A2D30C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A25B0B2B3C09D100A2D30C /* ContentView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22A25B012B3C089600A2D30C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2283BEE42A56EC9F004C1034 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A25AF02B3C089500A2D30C;
+			remoteInfo = WidgetMockExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22A25B072B3C089600A2D30C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				22A25B032B3C089600A2D30C /* WidgetMockExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		227FFCD22A8FBA6000B800F7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +56,15 @@
 		2283BEF82A56ECA1004C1034 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2283BEFB2A56ECA1004C1034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2283BEFD2A56ECA1004C1034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A25AF12B3C089500A2D30C /* WidgetMockExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetMockExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A25AF32B3C089500A2D30C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		22A25AF52B3C089500A2D30C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		22A25AF82B3C089500A2D30C /* WidgetMockBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetMockBundle.swift; sourceTree = "<group>"; };
+		22A25AFC2B3C089500A2D30C /* WidgetMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetMock.swift; sourceTree = "<group>"; };
+		22A25AFE2B3C089600A2D30C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22A25B002B3C089600A2D30C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A25B082B3C090500A2D30C /* TimerAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAttributes.swift; sourceTree = "<group>"; };
+		22A25B0B2B3C09D100A2D30C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +75,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22A25AEE2B3C089500A2D30C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A25AF62B3C089500A2D30C /* SwiftUI.framework in Frameworks */,
+				22A25AF42B3C089500A2D30C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				2283BEEE2A56EC9F004C1034 /* MyAnswer */,
+				22A25AF72B3C089500A2D30C /* WidgetMock */,
+				22A25AF22B3C089500A2D30C /* Frameworks */,
 				2283BEED2A56EC9F004C1034 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				2283BEEC2A56EC9F004C1034 /* MyAnswer.app */,
+				22A25AF12B3C089500A2D30C /* WidgetMockExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,12 +111,34 @@
 			children = (
 				2283BEEF2A56EC9F004C1034 /* AppDelegate.swift */,
 				227FFCD22A8FBA6000B800F7 /* ViewController.swift */,
+				22A25B0B2B3C09D100A2D30C /* ContentView.swift */,
 				227FFCD42A8FBA7300B800F7 /* Main.storyboard */,
 				2283BEF82A56ECA1004C1034 /* Assets.xcassets */,
 				2283BEFA2A56ECA1004C1034 /* LaunchScreen.storyboard */,
 				2283BEFD2A56ECA1004C1034 /* Info.plist */,
+				22A25B082B3C090500A2D30C /* TimerAttributes.swift */,
 			);
 			path = MyAnswer;
+			sourceTree = "<group>";
+		};
+		22A25AF22B3C089500A2D30C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22A25AF32B3C089500A2D30C /* WidgetKit.framework */,
+				22A25AF52B3C089500A2D30C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22A25AF72B3C089500A2D30C /* WidgetMock */ = {
+			isa = PBXGroup;
+			children = (
+				22A25AF82B3C089500A2D30C /* WidgetMockBundle.swift */,
+				22A25AFC2B3C089500A2D30C /* WidgetMock.swift */,
+				22A25AFE2B3C089600A2D30C /* Assets.xcassets */,
+				22A25B002B3C089600A2D30C /* Info.plist */,
+			);
+			path = WidgetMock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +151,34 @@
 				2283BEE82A56EC9F004C1034 /* Sources */,
 				2283BEE92A56EC9F004C1034 /* Frameworks */,
 				2283BEEA2A56EC9F004C1034 /* Resources */,
+				22A25B072B3C089600A2D30C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				22A25B022B3C089600A2D30C /* PBXTargetDependency */,
 			);
 			name = MyAnswer;
 			productName = MyAnswer;
 			productReference = 2283BEEC2A56EC9F004C1034 /* MyAnswer.app */;
 			productType = "com.apple.product-type.application";
+		};
+		22A25AF02B3C089500A2D30C /* WidgetMockExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22A25B042B3C089600A2D30C /* Build configuration list for PBXNativeTarget "WidgetMockExtension" */;
+			buildPhases = (
+				22A25AED2B3C089500A2D30C /* Sources */,
+				22A25AEE2B3C089500A2D30C /* Frameworks */,
+				22A25AEF2B3C089500A2D30C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetMockExtension;
+			productName = WidgetMockExtension;
+			productReference = 22A25AF12B3C089500A2D30C /* WidgetMockExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -91,11 +187,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					2283BEEB2A56EC9F004C1034 = {
 						CreatedOnToolsVersion = 14.0;
+					};
+					22A25AF02B3C089500A2D30C = {
+						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
@@ -113,6 +212,7 @@
 			projectRoot = "";
 			targets = (
 				2283BEEB2A56EC9F004C1034 /* MyAnswer */,
+				22A25AF02B3C089500A2D30C /* WidgetMockExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +228,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22A25AEF2B3C089500A2D30C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A25AFF2B3C089600A2D30C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,10 +245,31 @@
 			files = (
 				2283BEF02A56EC9F004C1034 /* AppDelegate.swift in Sources */,
 				227FFCD32A8FBA6000B800F7 /* ViewController.swift in Sources */,
+				22A25B0C2B3C09D100A2D30C /* ContentView.swift in Sources */,
+				22A25B092B3C090500A2D30C /* TimerAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A25AED2B3C089500A2D30C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A25B0A2B3C090500A2D30C /* TimerAttributes.swift in Sources */,
+				22A25B0D2B3C09D100A2D30C /* ContentView.swift in Sources */,
+				22A25AFD2B3C089500A2D30C /* WidgetMock.swift in Sources */,
+				22A25AF92B3C089500A2D30C /* WidgetMockBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22A25B022B3C089600A2D30C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A25AF02B3C089500A2D30C /* WidgetMockExtension */;
+			targetProxy = 22A25B012B3C089600A2D30C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2283BEFA2A56ECA1004C1034 /* LaunchScreen.storyboard */ = {
@@ -271,17 +400,20 @@
 		2283BF012A56ECA1004C1034 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyAnswer/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,17 +430,20 @@
 		2283BF022A56ECA1004C1034 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyAnswer/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +451,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.myanswer.MyAnswer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22A25B052B3C089600A2D30C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetMock/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetMock;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myanswer.MyAnswer.WidgetMock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22A25B062B3C089600A2D30C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetMock/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetMock;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myanswer.MyAnswer.WidgetMock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,6 +528,15 @@
 			buildConfigurations = (
 				2283BF012A56ECA1004C1034 /* Debug */,
 				2283BF022A56ECA1004C1034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22A25B042B3C089600A2D30C /* Build configuration list for PBXNativeTarget "WidgetMockExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A25B052B3C089600A2D30C /* Debug */,
+				22A25B062B3C089600A2D30C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
